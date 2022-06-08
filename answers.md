@@ -1,8 +1,8 @@
 # Big O Answers
 
 ## Snippet 1 -
-### Big O:
-### Explanation:
+### Big O: This would be O(n).
+### Explanation:the time increases proportionally to the size of the input
 ```python
 def largest(array, value):
   for item in array:
@@ -13,8 +13,8 @@ def largest(array, value):
 
 
 ## Snippet 2 -
-### Big O:
-### Explanation:
+### Big O: this would be O(2n)
+### Explanation: The input is iterated through two individual times but not compounded.
 
 ```python
 def info_dump(customers):
@@ -30,8 +30,8 @@ def info_dump(customers):
 ```
 
 ## Snippet 3 -
-### Big O:
-### Explanation:
+### Big O: O(1)
+### Explanation: Regardless of input size, the algo is only ran once.
 
 ```python
 def first_element_is_red(array):
@@ -39,8 +39,8 @@ def first_element_is_red(array):
 ```
 
 ## Snippet 4 -
-### Big O:
-### Explanation:
+### Big O: O(n^2)
+### Explanation: Here the array is enumerated seperatley in each listm then the second loop travels through the entire array at each step of the first loop.
 
 ```python
 def duplicates(array):
@@ -54,8 +54,8 @@ def duplicates(array):
 ``` 
 
 ## Snippet 5 -
-### Big O:
-### Explanation:
+### Big O: O(n^2) 
+### Explanation:the first loop is ran O(n) independent of inner loop, the inner loop runs O(n) dependant on outerloop .
 
 ```python
 words = ['chocolate', 'coconut', 'rainbow']
@@ -68,8 +68,8 @@ for word in words:
 ```
 
 ## Snippet 6 -
-### Big O:
-### Explanation:
+### Big O: O(n)
+### Explanation: the for loop is only ran one time per intput. increases linearly.
 
 ```python
 numbers = [1,2,3,4,5,6,7,8,9,10]
@@ -81,8 +81,9 @@ def print_array(array):
 ```
 
 ## Snippet 7 -
-### Big O:
-### Explanation:
+### Big O: O(n^2)
+### Explanation: for every element in the foor loop. The while loop runs indefinitley until the paramaters are not met
+### in other words for loop depend on condition of while loop to step
 
 ```python
 # this is insertion sort
@@ -97,8 +98,8 @@ def insertionSort(arr):
 ```
 
 ## Snippet 8 -
-### Big O:
-### Explanation:
+### Big O: O(n^2)
+### Explanation: O(n) loop inside O(n) loop
 
 ```python
 for i in range(len(my_list)):
